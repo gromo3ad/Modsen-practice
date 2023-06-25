@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +14,15 @@
     <title>Start</title>
   </head>
   <body>
+    <div data-menu class="menu">
+      <div class="menu__content">
+        <a class="menu__text">Home</a>
+        <a class="menu__text">Portfolio</a>
+        <a class="menu__text">Services</a>
+        <a class="menu__text">Contact</a>
+        <a class="menu__text" data-menu-close>Back</a>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -31,6 +40,7 @@
               <a class="header__text header__text_nav text_regular">Contact</a>
             </nav>
             <img
+              data-menu-open
               src="./assets/images/burger.png"
               alt="burger"
               class="header__burger"
@@ -239,5 +249,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
